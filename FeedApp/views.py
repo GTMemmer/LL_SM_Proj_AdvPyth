@@ -10,7 +10,7 @@ from django.http import Http404
 # Create your views here.
 
 # When a URL request matches the pattern we just defined, 
-# Django looks for a function called index() in the views.py file. 
+# Django looks for a function called index() in the views.py file. s
 
 def index(request):
     """The home page for Learning Log."""
