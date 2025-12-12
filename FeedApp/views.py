@@ -107,7 +107,7 @@ def comments(request, post_id):
 @login_required
 def friends(request):
     #get the admin profile and the user profile to creat the first relationship
-    admin_profile = Profile.objects.get(user=1)
+    admin_profile = Profile.objects.get(user=2)
     user_profile = Profile.objects.get(user=request.user)
 
     # to get friends
