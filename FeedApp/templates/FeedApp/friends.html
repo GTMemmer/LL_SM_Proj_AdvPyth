@@ -30,8 +30,8 @@
     {% for friend in user_friends_profiles %}
     <tr>
         <td>{{friend}}</td>
-        <td>{{friend.firstname}}</td>
-        <td>{{friend.lastname}}</td>
+        <td>{{friend.first_name}}</td>
+        <td>{{friend.last_name}}</td>
         <td>{{friend.email}}</td>
         <td>{{friend.created|date:'M d Y'}}</td>
     </tr>
