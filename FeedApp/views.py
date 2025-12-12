@@ -126,7 +126,7 @@ def friends(request):
 
     #if this is the first time to access the friend request page, create the first relationship
     # with the admin of the website (so the admin is friends with everyone)
-    if not user_relationships.exists():          #filter works with exits, get does not
+    if not user_relationships.exists.exists():          #filter works with exits, get does not
         Relationship.objects.create(sender=user_profile,receiver=admin_profile,status='sent')
 
     #check which button was pressed(sending or accepting friend request)
